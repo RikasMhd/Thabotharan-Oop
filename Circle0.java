@@ -1,6 +1,7 @@
 public class Circle0{
 	private double radius;
 	private String colour;
+	
 	public Circle0(){
 		this.radius=1.0;
 		this.colour="red";
@@ -35,3 +36,4 @@ public class Circle0{
 	
 	
 }
+
