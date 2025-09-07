@@ -1,27 +1,20 @@
-public class Rectangle extends Shape{
+public class Rectangle extends ShapeNew{
+	
 	private int length;
 	private int width;
 	
-	public Rectangle(int length,int width,String colour){
-		super(colour);
+	public Rectangle(String color, int length, int width){
+		super(color);
 		this.length=length;
-		this.width=width;
+		this. width=width;
 	}
-	public int getLength(){
-		return this.length;
-	}
-	public int getWidth(){
-		return this.width;
-	}
+	
 	@Override
 	public double getArea(){
-		return (double)getLength()*getWidth();
+		return this.length*this.width;
 	}
+	
 	public String toString(){
-		return "Colour of the Triangle is "+super.getColour()+"\nLength of the Rectangle is "+getLength()+"\nWidth of the Rectangle is "+getWidth()+"\nArea of the Shape is "+getArea()+"sq.";
+		return "The Rectangle: "+super.toString();
 	}
-	public static void main(String [] args){
-		Rectangle R1=new Rectangle(51,23,"Grey");
-		System.out.println(R1);
-	}
-}
+} 

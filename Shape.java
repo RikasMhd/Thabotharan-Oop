@@ -1,21 +1,18 @@
 public class Shape{
-	private String colour;
-	
-	public Shape(String colour){
-		this.colour=colour;
-	}
-	public String getColour(){
-		return this.colour;
-	}
-	public double getArea(){
-		return 200;
-	}
-	public String toString(){
-		return "Colour of the shape is "+getColour()+"\nArea of the Shape is "+getArea()+"sq.";
-	}
-	
-	public static void main(String [] args){
-		Shape S1=new Shape("Blue");
-		System.out.println(S1);
-	}
+	 private String color;
+	 
+	 public Shape(String color){
+		 this.color=color;
+	 }
+	 
+	 public double getArea()
+	 {
+		 System.out.println("aw snap! my Area is not defined");
+		 return 0;
+	 }
+	 
+	 public String toString()
+	 {
+		 return "Circle colour is "+this.color;
+	 }
 }
